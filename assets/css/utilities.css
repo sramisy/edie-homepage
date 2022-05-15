@@ -1,0 +1,26 @@
+.bg-blue {
+    background-color: var(--clr-blue);
+    color: var(--clr-white);
+}
+
+.bg-green {
+    background-color: var(--clr-green);
+    color: var(--clr-white);
+}
+
+.bg-red {
+    background-color: var(--clr-red);
+    color: var(--clr-white);
+}
+
+.text-md {
+    font-size: var(--fs-md) !important;
+}
+
+.relative {
+    position: relative;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}

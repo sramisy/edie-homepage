@@ -1,0 +1,85 @@
+.container-1 {
+  max-inline-size: 1332px;
+  margin-inline: auto;
+}
+
+.container-2 {
+  max-inline-size: 1110px;
+  margin-inline: auto;
+}
+
+.l-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.l-contact {
+  max-inline-size: 370px;
+}
+
+.l-grid-services {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  justify-content: center;
+  gap: var(--size-10);
+}
+
+.l-grid-portfolio {
+  display: -ms-grid;
+  display: grid;
+  gap: var(--size-9);
+}
+
+.l-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--size-9);
+}
+
+.l-grid-members {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(160px, 1fr));
+  grid-template-rows: repeat(2, minmax(160px, 1fr));
+  align-items: center;
+  gap: clamp(var(--size-2), 0.25rem + 1.5vw, var(--size-6));
+  justify-content: end;
+}
+
+.l-footer {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: start;
+  gap: 4rem;
+}
+
+@media screen and (min-width: 560px) {
+  .l-grid-portfolio {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    column-gap: var(--size-5);
+    row-gap: 140px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .l-team {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .l-footer {
+    row-gap: 6rem;
+    justify-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .l-footer {
+    justify-items: initial;
+  }
+}

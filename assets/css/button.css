@@ -1,0 +1,24 @@
+.btn {
+    --color: var(--clr-gray-3);
+    --bg-color: var(--clr-gray-5);
+    display: inline-block;
+    font-size: clamp(var(--fs-sm), 0.5rem + 1.5vw, var(--fs-lg));
+    font-weight: 500;
+    padding-inline: var(--size-5);
+    padding-block: var(--size-3);
+    border: none;
+    border-radius: var(--br-md);
+    background-color: var(--bg-color);
+    color: var(--color);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn--primary {
+    --color: var(--clr-white);
+    --bg-color: var(--clr-blue);
+}
+
+.btn--small {
+    padding-inline: var(--size-3);
+    padding-block: var(--size-2);
+}
