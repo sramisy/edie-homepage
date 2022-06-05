@@ -11,9 +11,11 @@ window.addEventListener('DOMContentLoaded', () => {
     const allNavLinks = document.querySelectorAll('.nav-link[href^="#"]');
     allNavLinks.forEach(link => {
         link.addEventListener('click', (e) => {
-            document.body.classList.toggle('overflow-hidden');
-            e.currentTarget.parentElement.parentElement.classList.toggle('nav-items--show');
-            navToggler.innerHTML = '<span class="material-icons-round">menu</span>';
+            if (window.innerWidth < 1024) {
+                document.body.classList.toggle('overflow-hidden');
+                e.currentTarget.parentElement.parentElement.classList.toggle('nav-items--show');
+                navToggler.innerHTML = '<span class="material-icons-round">menu</span>';
+            }
         });
     });
 });
